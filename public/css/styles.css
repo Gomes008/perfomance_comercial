@@ -1,0 +1,253 @@
+/*----------------------------------------*/
+/* General CSS
+/*----------------------------------------*/
+*{
+    font-family: 'Roboto';
+}
+
+body {
+    min-height: 100vh;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+header {
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+.row {
+    margin: 0;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.container-fluid {
+    margin: 0;
+}
+
+.btn-primary {
+    background-color: #F2A340;
+    border: 2px solid #C28008;
+}
+
+.btn-primary:hover {
+    background-color: #C28008;
+    border-color: #C28008;
+}
+
+.msg {
+    background-color: #D4EDDA;
+    color: #155734;
+    border: 1px solid #C3E6CB;
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 10px;
+}
+
+.select-container {
+    width: 100%;
+    padding: 25px 7px;
+}
+
+/*----------------------------------------*/
+/* navbar CSS
+/*----------------------------------------*/
+
+#navbar img {
+    width: 80px;
+}
+
+#navbar {
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 5px 0;
+}
+
+#navbar a {
+    font-size: 14px;
+    color: #757575;
+}
+
+#navbar a:hover {
+    color: #F2A340;
+}
+
+.nav-item {
+	 flex-direction: column;
+	 text-align: center;
+}
+
+.nav-item ion-icon {
+	font-size: 30px;
+	margin-bottom: -15px;
+}
+
+/*----------------------------------------*/
+/* tab CSS
+/*----------------------------------------*/
+.with-arrow .nav-link.active {
+  position: relative;
+}
+
+.with-arrow .nav-link.active::after {
+  content: '';
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #2b90d9;
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+}
+#consultor {
+    width: 100%;
+}
+
+
+#select-container-consultant,
+#select-container-client {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+
+
+/*----------------------------------------*/
+/* Item list CSS
+/*----------------------------------------*/
+#select-area {
+    margin-top: 20px;
+}
+
+#btn-report-consultant,
+#btn-report-client {
+	margin-top: 30px;
+}
+
+#btn-report-consultant ion-icon,
+#btn-report-client ion-icon {
+    font-size: 20px;
+    color: #F2A340;
+    margin-bottom: -3px;
+}
+
+.nav-pills-custom .nav-link {
+    color: #aaa;
+    background-color: #CCE5FF;
+    position: relative;
+}
+
+.nav-pills-custom .nav-link.active {
+    color: #45b649;
+    background: #CCE5FF;
+}
+
+
+/* Add indicator arrow for the active tab */
+@media (min-width: 992px) {
+    .nav-pills-custom .nav-link::before {
+        content: '';
+        display: block;
+        border-top: 8px solid transparent;
+        border-left: 10px solid #fff;
+        border-bottom: 8px solid transparent;
+        position: absolute;
+        top: 50%;
+        right: -10px;
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+}
+
+.nav-pills-custom .nav-link.active::before {
+    opacity: 1;
+}
+
+
+/*----------------------------------------*/
+/* Content CSS
+/*----------------------------------------*/
+
+#info-container{
+	padding-left: 0;
+	padding-right: 0;
+}
+#info-container-client,
+#info-container-consultant {
+    width: 100%;
+    align-content: center;
+    margin-top: 30px;
+}
+.chart {
+    width: 500px;
+}
+
+/*----------------------------------------*/
+/* Table CSS
+/*----------------------------------------*/
+
+.ls-table {
+    background-color: white;
+    box-shadow: 0 1px 0 #e7e7e7;
+    border-radius: 4px 4px 0 0;
+}
+
+.ls-table thead {
+    color: white;
+}
+
+.bg-gray1, .ls-table thead {
+    background-color: #555555;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.ls-table tbody tr:nth-child(odd), .modal-footer, .well {
+    background-color: #f7f7f7;
+}
+.ls-table tbody tr {
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+#tr-subtitle {
+    background-color: #CCE5FF;
+}
+
+#tr-total {
+    background-color: #CCE5FF;
+    font-weight: bold;
+}
+
+.blue-class {
+    color: blue;
+}
+
+.red-class {
+    color: red;
+}
+
+/* footer */
+
+footer {
+    text-align: center;
+    background-color: #353E48;
+    color: #fff;
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
